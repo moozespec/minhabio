@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang"pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <!--linguagem da pagina-->
+  <meta name="viewport" content="width=device-width">
+  <title>Minha Bio | Fale Comigo</title>
+  <!--Título da pagina-->
+
+
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <!--Ligacao da pagina de css na html-->
+
+  
+
+</head>
+
+
+<body>
+  <!--AQUI É O CABEÇALHO-->
+<header>
+    <div id="interface">
+
+      <nav id="menu-h">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="sobre.htm">Sobre</a></li>
+          <li><a href="minhabio.html">Minha Bio</a></li>
+          <li><a href="fotos.html">Fotos</a></li>
+          <li><a href="portfolio.html">Portfólio</a></li>
+          <li><a href="certificados.html">Certificados</a></li>
+          <li><a href="falecomigo.html">Fale Comigo</a></li>
+        </ul>
+      </nav>
+      </div>
+</header>
+
+<hgroup>
+        
+<!--CODIGO HTML PARA UTILIZAR O RELOGIO EM TEMPO REAL-->
+    <div style="text-align:right">
+    <font color="#864086" <!--linha de codigo que mudou a cor do relogio-->
+    <div id="data-hora"></div>
+    <script>
+      // Função para formatar 1 em 01
+      const zeroFill = n => {
+        return ('0' + n).slice(-2);
+      }
+
+      // Cria intervalo
+      const interval = setInterval(() => {
+        // Pega o horário atual
+        const now = new Date();
+
+        // Formata a data conforme dd/mm/aaaa hh:ii:ss
+        const dataHora = zeroFill(now.getUTCDate()) + '/' + zeroFill((now.getMonth() + 1)) + '/' + now.getFullYear() + ' ' + zeroFill(now.getHours()) + ':' + zeroFill(now.getMinutes()) + ':' + zeroFill(now.getSeconds());
+
+        // Exibe na tela usando a div#data-hora
+        document.getElementById('data-hora').innerHTML = dataHora;
+      }, 1000);
+    </script>
+    </div>
+    <!--FIM DO CODIGO DO RELOGIO EM TEMPO REAL-->
+        
+        <h1>Fale Comigo</h1>
+        <h5> </h5><br>
+      </hgroup>
+    
+
+   <br><p> Aqui você pode me mandar um sugetão ou crítica contrutiva para que o Minha Bio possa sempre estar em constante evolução.</p> <br>
+    <!--=----------------------------------------->
+    
+<!--aqui estão os codigos do formulario fale comigo-->
+  <form action="obrigado.php" method="POST" name="form">
+    <div>
+        <label for="nome">Nome:</label>
+        <input type="texto" id="nome" name="nome_usuario" placeholder="Insira seu nome">
+    </div>
+    <div>
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email_usuario" placeholder="Insira seu email">
+    </div>
+    <div class="field">
+      <label class="label">Mensagem:</label>
+      <div class="control">
+        <textarea style="resize:none" name="mensagem" class="textarea" placeholder="Deixe sua mensagem" maxlength="2000"> </textarea>
+        
+    
+
+      </div>
+      </div>
+</form>
+
+<br>
+        <div class="button">
+          <button type="submit">Enviar</button>
+          
+        </div>
+    
+<!--fim do código-->
+
+    
+
+<!--LINKS DO RODAPE-->
+    <body link="SlateBlue" vlink="gray"> <!--codigo para mudar a cor dos links do rodape. link é a cor ativa e vlink é a cor depois de clicar no link-->
+    <center>
+    <br><br>
+    <p> <a href="https://www.linkedin.com/in/felipe-daniel-santos-6126351bb/" target="_blank"
+          rel="noopener noreferrer">Linkedin</a> | <a href="https://www.facebook.com/darkmooze/" target=" _blank"
+          rel="noopener noreferrer">Facebook</a> | <a href="https://www.site.com" target=" _blank"
+          rel="noopener noreferrer">Instagram</a> | <a href="https://github.com/moozespec" target=" _blank"
+          rel="noopener noreferrer">Github</a> | <a href="https://www.last.fm/pt/user/daniel_mosely" target=" _blank"
+          rel="noopener noreferrer">Last.fm</a></p>
+    </p>
+    </center>
+<!--FIM DOS LINKS-->
+
+    
+
+    <footer class="footer">
+      <center>2022 - by moozespec</center>
+        </footer>
+  </div>
+</body>
+
+</html>

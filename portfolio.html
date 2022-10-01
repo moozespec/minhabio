@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <!--linguagem da pagina-->
+  <meta name="viewport" content="width=device-width">
+  <title>Minha Bio | Portfólio</title>
+  <!--Título da pagina-->
+
+
+  
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <!--Ligacao da pagina de css na html-->
+
+</head>
+
+
+<body>
+  <!--AQUI É O CABEÇALHO-->
+<header>
+    <div id="interface">
+
+      <nav id="menu-h">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="sobre.htm">Sobre</a></li>
+          <li><a href="minhabio.html">Minha Bio</a></li>
+          <li><a href="fotos.html">Fotos</a></li>
+          <li><a href="portfolio.html">Portfólio</a></li>
+          <li><a href="certificados.html">Certificados</a></li>
+          <li><a href="falecomigo.html">Fale Comigo</a></li>
+        </ul>
+      </nav>
+      </div>
+</header>
+  
+<hgroup>
+<!--CODIGO HTML PARA UTILIZAR O RELOGIO EM TEMPO REAL-->
+    <div style="text-align:right">
+    <font color="#864086" <!--linha de codigo que mudou a cor do relogio-->
+    <div id="data-hora"></div>
+    <script>
+      // Função para formatar 1 em 01
+      const zeroFill = n => {
+        return ('0' + n).slice(-2);
+      }
+
+      // Cria intervalo
+      const interval = setInterval(() => {
+        // Pega o horário atual
+        const now = new Date();
+
+        // Formata a data conforme dd/mm/aaaa hh:ii:ss
+        const dataHora = zeroFill(now.getUTCDate()) + '/' + zeroFill((now.getMonth() + 1)) + '/' + now.getFullYear() + ' ' + zeroFill(now.getHours()) + ':' + zeroFill(now.getMinutes()) + ':' + zeroFill(now.getSeconds());
+
+        // Exibe na tela usando a div#data-hora
+        document.getElementById('data-hora').innerHTML = dataHora;
+      }, 1000);
+    </script>
+    </div>
+    <!--FIM DO CODIGO DO RELOGIO EM TEMPO REAL-->
+  
+        <h1>Portfólio</h1>
+        <h7>Ultima edição: 11/07/2022</h7><br>
+</hgroup>
+
+    
+<!--AQUI TERMINA O CABEÇALHO-->
+
+<br>
+<i><p>Abaixo estarão meus links de projetos que realizei em minha horas vagas. Fique a vontade para deixar um feeedback.</i> <b>--EM CONSTRUÇÃO--</b></p>
+
+
+
+<br><br><br><br>
+    
+       <p>Site criado para troca de mídias como, músicas, vídeos, letras e até ouvir música online.</p> 
+               
+<a href="https://minhamidia.netlify.app/" target="_blank" rel="noopener noreferrer"><button style="background: #6524ff; border-radius: 6px; padding: 15px; cursor: pointer; color: #fff; border: none; font-size: 16px;">Minha Mídia</button></a>
+
+    <br>
+    <br>
+    
+    <p>Este website esta sendo desenvolvido para o melhor e mais poderoso time do PLANETA: A Sociedade Esportiva Palmeiras.</p> 
+               
+<a href="https://meutime.netlify.app/" target="_blank" rel="noopener noreferrer"><button style="background: #6524ff; border-radius: 6px; padding: 15px; cursor: pointer; color: #fff; border: none; font-size: 16px;">Meu Time</button></a>
+
+
+
+    <!--rel="noopener noreferrer" = O atributo rel define a relação entre sua página e o URL vinculado. Configurá-lo como noopener noreferrer evita um tipo de phishing conhecido como 'tabnabbing'. Tabnabbing, algumas vezes chamado de tabnabbing reverso, é uma maneira de explorar o navegador que usa seu comportamento padrão com target="_blank" para ganhar acesso parcial à sua página por meio da API window.object.
+
+Com o tabnabbing, uma página a qual você fez um vínculo pode fazer com que sua página redirecione para uma página de login falsa. Isso seria muito difícil para a maioria dos usuários perceberem, pois o foco estaria na aba que recém abriu – não na aba original com sua página.
+
+Assim, quando uma pessoa retornasse à aba com sua página, ela veria a página de login falsa em vez disso e inseriria seus detalhes de login.-->
+
+
+
+    
+
+
+
+<!--LINKS DO RODAPE-->
+    <body link="SlateBlue" vlink="gray"> <!--codigo para mudar a cor dos links do rodape. link é a cor ativa e vlink é a cor depois de clicar no link-->
+    <center>
+    <br><br>
+    <p> <a href="https://www.linkedin.com/in/felipe-daniel-santos-6126351bb/" target="_blank"
+          rel="noopener noreferrer">Linkedin</a> | <a href="https://www.facebook.com/darkmooze/" target=" _blank"
+          rel="noopener noreferrer">Facebook</a> | <a href="https://www.site.com" target=" _blank"
+          rel="noopener noreferrer">Instagram</a> | <a href="https://github.com/moozespec" target=" _blank"
+          rel="noopener noreferrer">Github</a> | <a href="https://www.last.fm/pt/user/daniel_mosely" target=" _blank"
+          rel="noopener noreferrer">Last.fm</a></p>
+    </p>
+    </center>
+
+<!--FIM DOS LINKS-->
+
+    <footer class="footer">
+      <center>2022 - by moozespec</center>
+        </footer>
+    
+  </div>
+</body>
+
+</html>
